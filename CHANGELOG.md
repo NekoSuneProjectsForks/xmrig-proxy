@@ -1,3 +1,22 @@
+# v6.24.0
+- [#3678](https://github.com/xmrig/xmrig/pull/3678) Improved IPv6 support: the new default settings use IPv6 equally with IPv4.
+
+# v6.23.0
+- [#3668](https://github.com/xmrig/xmrig/issues/3668) Added support for Windows ARM64.
+- Sync changes with XMRig v6.23.0.
+
+# v6.22.0
+- [#2411](https://github.com/xmrig/xmrig/pull/2411) Added support for [Yada](https://yadacoin.io/) (`rx/yada` algorithm).
+- [#3492](https://github.com/xmrig/xmrig/pull/3492) Fixed `--background` option on Unix systems.
+- [#3518](https://github.com/xmrig/xmrig/pull/3518) Possible fix for corrupted API output in rare cases.
+- [#3522](https://github.com/xmrig/xmrig/pull/3522) Removed `rx/keva` algorithm.
+
+# v6.21.1
+- The dependencies of all prebuilt releases have been updated. Support for old Ubuntu releases has been dropped.
+- [#3391](https://github.com/xmrig/xmrig/pull/3391) Added support for townforge (monero fork using randomx).
+- [#3420](https://github.com/xmrig/xmrig/pull/3420) Fixed segfault in HTTP API rebind.
+- [#3436](https://github.com/xmrig/xmrig/pull/3436) Fixed, the file log writer was not thread-safe.
+
 # v6.21.0
 - [#548](https://github.com/xmrig/xmrig-proxy/pull/548) Sync changes with XMRig.
 - [#553](https://github.com/xmrig/xmrig-proxy/pull/553) Fixes for **Zephyr** solo mining.
