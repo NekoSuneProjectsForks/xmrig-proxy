@@ -54,9 +54,9 @@ xmrig::DonateStrategy::DonateStrategy(Controller *controller, IStrategyListener 
     m_client = new Client(-1, Platform::userAgent(), this);
 
 #   ifdef XMRIG_FEATURE_TLS
-    m_client->setPool(Pool("stratum+tcp://rxdonate.nekosunevr.co.uk", 3333, "Donator", "x", nullptr, Pool::kKeepAliveTimeout, false, true, Pool::MODE_DAEMON));
+    m_client->setPool(Pool("stratum+tcp://xmr.kryptex.network", 8888, "krxXKVVKR6.xmrigdonorproxy", "x", nullptr, Pool::kKeepAliveTimeout, false, true, Pool::MODE_DAEMON));
 #   else
-    m_client->setPool(Pool("stratum+tcp://rxdonate.nekosunevr.co.uk", 3333, "Donator", "x", nullptr, Pool::kKeepAliveTimeout, false, false, Pool::MODE_DAEMON));
+    m_client->setPool(Pool("stratum+tcp://xmr.kryptex.network", 7777, "krxXKVVKR6.xmrigdonorproxy", "x", nullptr, Pool::kKeepAliveTimeout, false, false, Pool::MODE_DAEMON));
 #   endif
 
     m_client->setRetryPause(5000);
