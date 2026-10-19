@@ -33,6 +33,7 @@ jobs:
       - name: Upload Windows build artifacts
         uses: actions/upload-artifact@v4
         with:
+          retention-days: 1
           name: windows_build
           path: windows_build.zip
     outputs:
@@ -64,6 +65,7 @@ jobs:
       - name: Upload Ubuntu ARM build artifacts
         uses: actions/upload-artifact@v4
         with:
+          retention-days: 1
           name: ubuntu_buildarm
           path: ubuntu_buildarm.tar.gz
   build_linamd:
@@ -89,6 +91,7 @@ jobs:
       - name: Upload Ubuntu build artifacts
         uses: actions/upload-artifact@v4
         with:
+          retention-days: 1
           name: ubuntu_buildamd
           path: ubuntu_buildamd.tar.gz
     
@@ -124,6 +127,7 @@ jobs:
       - name: Upload MacOS build artifacts
         uses: actions/upload-artifact@v4
         with:
+          retention-days: 1
           name: macos_build
           path: macos_build.tar.gz
 
